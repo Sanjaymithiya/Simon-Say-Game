@@ -1,18 +1,37 @@
 body{
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
     display: flex;
     justify-content: center;
 }
-
-.btn{
-    height: 175px;
-    width: 175px;
-    border: 7px solid black;
+h1{
+    text-decoration: underline;
+    background-color: black;
+    margin-top: 0;
+    line-height: 3.5rem;
+    color: royalblue;
+}
+h3{
+    display: inline-block;
+    padding: 0.75rem;
+    border: 1px solid blue;
+    background-color: black;
     border-radius: 1rem;
-    margin: 1.5rem;
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.2);
+    color: white;
+}
+.btn{
+    height: 145px;
+    width: 145px;
+    border: 6px solid black;
+    border-radius: 1.5rem;
+    margin: 1.2rem;
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.2);
+    padding: 0.5rem;
 }
 .red{
     background-color: #d95980;
