@@ -7,6 +7,7 @@ let highestScore = 0;
 
 let h2 = document.querySelector("h2");
 let h3 = document.querySelector("h3");
+const toggleBtn = document.querySelector(".mode");
 let btns = ["yellow", "red", "green", "purple"];
 
 document.addEventListener("keypress", function(){
@@ -90,5 +91,17 @@ function updateHighscore(){
    }
     h3.innerText = `Highest score : ${highestScore}`;
 }
-
+let theme = "light";
 //mode logic
+function changeMode(){
+    if (theme === "light") {
+        document.querySelector("body").classList.add("dark");
+        toggleBtn.innerHTML = `<i class="fa-solid fa-sun"></i>`
+        theme = "dark";
+    }else{
+        document.querySelector("body").classList.remove("dark");
+        toggleBtn.innerHTML = `<i class="fa-solid fa-moon"></i>`
+        theme = "light";
+    }
+}
+toggleBtn.addEventListener("click", changeMode);
