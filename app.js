@@ -90,3 +90,5 @@ function updateHighscore(){
    }
     h3.innerText = `Highest score : ${highestScore}`;
 }
+
+//mode logic
